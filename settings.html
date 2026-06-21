@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings & Analytics — The Cooking Story AI CRM</title>
+  <meta name="description" content="Configure your AI chatbot, manage connected channels, and view analytics for The Cooking Story CRM.">
+
+  <!-- Google Fonts — Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="settings">
+
+  <!-- Mobile hamburger -->
+  <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle menu">
+    <i class="ti ti-menu-2 icon"></i>
+  </button>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="sidebar-brand-logo">TC</div>
+      <div class="sidebar-brand-text">
+        <span class="sidebar-brand-name">The Cooking Story</span>
+        <span class="sidebar-brand-sub">AI CRM</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="index.html" class="sidebar-nav-link" data-nav="dashboard">
+        <i class="ti ti-layout-dashboard icon"></i> Dashboard
+      </a>
+      <a href="conversations.html" class="sidebar-nav-link" data-nav="conversations">
+        <i class="ti ti-message-circle icon"></i> Conversations
+      </a>
+      <a href="bookings.html" class="sidebar-nav-link" data-nav="bookings">
+        <i class="ti ti-calendar-event icon"></i> Bookings
+      </a>
+      <a href="settings.html" class="sidebar-nav-link" data-nav="settings">
+        <i class="ti ti-settings icon"></i> Settings
+      </a>
+    </nav>
+
+    <div class="sidebar-plan">
+      <div class="sidebar-plan-card">
+        <div class="sidebar-plan-badge">Pro plan</div>
+        <div class="sidebar-plan-usage">8,420 / 10,000 messages this month</div>
+        <div class="sidebar-plan-bar"><div class="sidebar-plan-bar-fill"></div></div>
+        <a href="#" class="sidebar-plan-link">Manage plan</a>
+      </div>
+    </div>
+
+    <div class="sidebar-support">
+      <div class="sidebar-support-row">
+        <div class="sidebar-support-avatar">
+          <i class="ti ti-message-dots icon"></i>
+        </div>
+        <span class="sidebar-support-text">Need help? Chat with support</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header-title">Settings & analytics</h1>
+      <div class="header-right">
+        <div class="header-status">
+          <span class="header-status-dot"></span>
+          Bot online · synced just now
+        </div>
+        <div class="header-user">
+          <div class="header-user-avatar">RP</div>
+          <div class="header-user-info">
+            <span class="header-user-name">Rajesh Patel</span>
+            <span class="header-user-biz">The Cooking Story</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-content">
+      <div class="settings-grid" id="settings-grid">
+        <!-- Business profile -->
+        <div class="settings-card" id="business-profile-card">
+          <!-- Rendered by settings.js -->
+        </div>
+
+        <!-- Bot configuration -->
+        <div class="settings-card" id="bot-config-card">
+          <!-- Rendered by settings.js -->
+        </div>
+
+        <!-- Connected channels -->
+        <div class="settings-card" id="channels-card">
+          <!-- Rendered by settings.js -->
+        </div>
+
+        <!-- Team & permissions -->
+        <div class="settings-card" id="team-card">
+          <!-- Rendered by settings.js -->
+        </div>
+
+        <!-- Analytics: Response accuracy chart -->
+        <div class="settings-card settings-card-full" id="analytics-card">
+          <div class="settings-card-title">
+            <i class="ti ti-chart-line icon"></i>
+            Response accuracy over time
+          </div>
+          <div class="chart-container chart-container-tall">
+            <canvas id="accuracyChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="badges.js"></script>
+  <script src="sidebar.js"></script>
+  <script src="settings.js"></script>
+</body>
+</html>
