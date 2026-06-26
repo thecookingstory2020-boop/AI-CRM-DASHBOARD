@@ -6,10 +6,10 @@
 
 const businessProfile = [
   { label: 'Business name', value: 'The Cooking Story' },
-  { label: 'Address', value: '42, Hauz Khas Village, New Delhi 110016' },
+  { label: 'Address', value: 'Shop No: 4, Near AMC Garden, Satelite, Ahmedabad, 380015' },
   { label: 'Cuisine type', value: 'North Indian, Mughlai, Fusion' },
   { label: 'Operating hours', value: '11:00 AM – 11:00 PM (Mon – Sun)' },
-  { label: 'Phone', value: '+91 98765 43210' },
+  { label: 'Phone', value: '+91 8780226352' },
   { label: 'GST number', value: '07AABCT1234A1ZT' },
 ];
 
@@ -22,9 +22,9 @@ const botToggles = [
 ];
 
 const connectedChannels = [
-  { platform: 'instagram', name: 'Instagram', account: '@thecookingstory.delhi', bgClass: 'instagram-bg', iconClass: 'ti-brand-instagram' },
-  { platform: 'whatsapp', name: 'WhatsApp Business', account: '+91 98765 43210', bgClass: 'whatsapp-bg', iconClass: 'ti-brand-whatsapp' },
-  { platform: 'email', name: 'Email', account: 'hello@thecookingstory.in', bgClass: 'email-bg', iconClass: 'ti-mail' },
+  { platform: 'instagram', name: 'Instagram', account: '@the.cookingstory', bgClass: 'instagram-bg', iconClass: 'ti-brand-instagram' },
+  { platform: 'whatsapp', name: 'WhatsApp Business', account: '+91 8780226352', bgClass: 'whatsapp-bg', iconClass: 'ti-brand-whatsapp' },
+  { platform: 'email', name: 'Email', account: 'thecookingstory2020@gmail.com', bgClass: 'email-bg', iconClass: 'ti-mail' },
 ];
 
 const teamMembers = [
