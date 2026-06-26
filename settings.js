@@ -6,7 +6,7 @@
 
 const businessProfile = [
   { label: 'Business name', value: 'The Cooking Story' },
-  { label: 'Address', value: 'Shop No: 4, Near AMC Garden, Satelite, Ahmedabad, 380015' },
+  { label: 'Address', value: 'Shop No: 4, Satelite, Ahmedabad, 380015' },
   { label: 'Cuisine type', value: 'North Indian, Mughlai, Fusion' },
   { label: 'Operating hours', value: '11:00 AM – 11:00 PM (Mon – Sun)' },
   { label: 'Phone', value: '+91 8780226352' },
